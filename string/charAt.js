@@ -1,27 +1,11 @@
 function charAt(string, index = 0) {
-    
-    // let char = string[index]
+  let char = "";
+  if (index >= 0 && index <= string.length - 1) {
+    char = string[index];
+  }
 
-    // if (index > string.length -1 || index <0 ) {
-    //     char = ''
-    // }
-
-    // let char
-    // if (index > string.length -1 || index <0 ) {
-    //     char = ''
-    // } else {
-    //     char = string[index]
-    // }
-
-    let char = ''
-    if (index >= 0 && index <= string.length -1) {
-        char = string[index]
-    }
-
-    return char
+  return char;
 }
-
-
 
 /*
 El método charAt() de String devuelve en un nuevo String el carácter UTF-16 de una cadena.

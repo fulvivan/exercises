@@ -1,21 +1,3 @@
-// function split(str, separator = '') {
-    
-//     let res = []
-//         // (str.substring(str, separator))
-    
-//     for (let i = 0; i < str.length; i++) {
-        
-//         if (separator !== str[i]) {
-//             res += str[i]
-//         }
-//         else if (separator === str[i]) {
-//             res += g[i]
-//         }
-//         res = 'f'+ 'g'
-//     }
-//     return res
-// }
-
 function split(string, separator) {
     var parts = []
 

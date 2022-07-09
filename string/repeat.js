@@ -1,29 +1,20 @@
 function repeat(string, count) {
-    let res = ''
+    var res = ''
+
     count = Math.floor(count)
-    let qualsiasi = 0;
 
-    // for (qualsiasi = 0; qualsiasi < count && count !== Infinity; qualsiasi++) {
-    //     res = res + string
-    // }
-    // res = qualsiasi === count ? res : 'rangeError'
+    while (count > 0 && count !== Infinity) {
+        res += string
 
-    // while (count > 0 && count !== Infinity) {
-    //     res += string
-    //     count--
-    // }
-
-    // res = count === 0 ? res : 'rangeError'
-
-    while ( qualsiasi < count && count !== Infinity ) 
-    {     
-        res = res + string
-        qualsiasi++
+        count--
     }
-        res = qualsiasi === count ? res : 'rangeError'
+
+    res = count === 0 ? res : 'rangeError'
 
     return res
 }
+
+// El método repeat() construye y devuelve una nueva cadena que contiene el número especificado de copias de la cadena en la cual fue llamada, concatenados. Si el parámetro count es un número decimal lo convertirá al integer justamente inferior.
 
 /*El método repeat() construye y devuelve una nueva cadena que contiene el número especificado de copias de la cadena en la cual fue llamada, concatenados.
 

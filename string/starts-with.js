@@ -1,18 +1,17 @@
 function startsWith(str, search, position = 0) {
-    // let res = false
-    let f = 0
+  let res = false;
+  let f = 0;
 
-    for (let i = position; f < search.length; i++) {
-        
-        if (str[i] === search[f]) {
-            res = true
-            f++
-        } else {
-            res = false
-        break
-        }
+  for (let i = position; f < search.length; i++) {
+    if (str[i] === search[f]) {
+      res = true;
+      f++;
+    } else {
+      res = false;
+      break;
     }
-return res
+  }
+  return res;
 }
 
 /*

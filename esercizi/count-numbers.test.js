@@ -1,8 +1,8 @@
-describe('TEST countNumbers')
+describe('TEST numbers')
 
 //CASE 1
 
-let res = countNumbers([9, 12, 34, 6, -5, -16, -18])
+let res = numbers([9, 12, 34, 6, -5, -16, -18])
 
 if (res instanceof Array
     && res.length === 3

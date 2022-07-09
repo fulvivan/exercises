@@ -1,39 +1,25 @@
-function search(str, regexp) {
-    let s = str.match(regexp)
-    let r = regexp
-    let res = -1
+function search(string, regEx) {
+    var search = string.match(regEx)
+    var res = -1
+    var j = 0
 
-    for (let i = 0; i < str.length; i++) {
+    for (var i = 0; i < string.length; i++) {
+        var character = string[i]
 
-        if (s === str[i]) {
-            res = s
+        if (character === search[j]) {
+            j++
+
+            if (j === search.length) {
+                res = i - j + 1
+
+            } else {  
+                j = 0
+            }
         }
-    }
-return res 
-}
-
-// function search(string, regEx) {
-//     var search = string.match(regEx)
-//     var res = -1
-//     var j = 0
-
-//     for (var i = 0; i < string.length; i++) {
-//         var character = string[i]
-
-//         if (character === search[j]) {
-//             j++
-
-//             if (j === search.length) {
-//                 res = i - j + 1
-
-//             } else {  
-//                 j = 0
-//             }
-//         }
-//     } 
+    } 
     
-//     return res
-// }
+    return res
+}
 
 
 

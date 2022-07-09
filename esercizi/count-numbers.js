@@ -1,23 +1,20 @@
-function countNumbers(array) {
+function numbers(values) { // values es de tipo array
+    var totalPositives = 0;
+    var totalNegatives = 0;
+    var copyValues = values;
 
-    let res = []
-    let positive = 0
-    let negative = 0
-    // let num = array.legth > 0 && 
+    for (var i = 0; i < copyValues.length; i++) {
+        var item = copyValues[i];
+        if (item >= 0) {
+            totalPositives += item;
+        } else {
+            totalNegatives += item;
+        }
+    }
 
-    for (let f = 0; f < array.length; f++) {
-    array[f] > 0 ? positive += array[f] : negative += array[f]
-    // if (array[f] > 0) {
-    //     positive += array[f];
-    // } else {
-    //     negative += array[f]; 
-    // } 
-    
-    
-}
-    res = [positive, negative, positive + negative]
-    
-    return res 
+    var balance = totalPositives + totalNegatives;
+    var arrCount = [totalPositives, totalNegatives, balance];
+    return arrCount;
 }
 
 // La función debe devolver un array con 3 posiciones.
