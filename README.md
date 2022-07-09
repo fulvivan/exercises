@@ -1,7 +1,7 @@
 # Titolo del Progetto
 -exercises-
 # Descrizione del progetto
-Ho usato questo repository per praticare JavaScript.
+Ho usato questo repository per praticare JavaScript. Sono esercizi completi di test.
 
 Sono esercizi dove ho imitato alcuni metodi JavaScript come:Concat, Push, Repeat, IndexOf.......
 
