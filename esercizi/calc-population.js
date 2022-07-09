@@ -1,37 +1,15 @@
-function calcPopulation( born, immigrant, dead, years, currentPopulation ) {
-    // let a = born
-    // let b = immigrant
-    // let c = dead
-    // let d = years
-    // let e = currentPopulation
-    
-    // let res = Number
+const calcPopulation = (natality, inmigration, mortality, estimatedYears, currentPopulation) => {
+    // Implementa tu código aquí
+        var newPopulation = currentPopulation;
 
-    for (let i = 0; i < years; i++) {
-        let f = currentPopulation * born / 100
-        f = Math.round(f)
-        currentPopulation += f + immigrant - dead
-        
-        // res = currentPopulation
-        
-    }
+        for (var i = 0; i < estimatedYears; i++) {
+            newPopulation += (newPopulation * natality / 100);
+            newPopulation += inmigration;
+            newPopulation -= mortality;   
+        }
 
-    return currentPopulation
+        return Math.round(newPopulation);
 }
-
-// FUNZIONE ISMAEL
-// const calcPopulation = (natality, inmigration, mortality, estimatedYears, currentPopulation) => {
-//     // Implementa tu código aquí
-//         var newPopulation = currentPopulation;
-
-//         for (var i = 0; i < estimatedYears; i++) {
-//             newPopulation += (newPopulation * natality / 100);
-//             newPopulation += inmigration;
-//             newPopulation -= mortality;   
-//         }
-
-//         return Math.round(newPopulation);
-// }
 
 // En este ejercicio debemos crear un pequeño programa para calcular el aumento
 // de la población de una ciudad. Para ello tendremos en cuenta el
