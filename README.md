@@ -1,5 +1,4 @@
-# Title
--exercises-
+
 # Description
 I used this repository to practice JavaScript.
 
