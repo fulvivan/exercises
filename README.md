@@ -1,10 +1,10 @@
-# Titolo del Progetto
+# Title
 -exercises-
-# Descrizione del progetto
-Ho usato questo repository per praticare JavaScript. Sono esercizi completi di test.
+# Description
+I used this repository to practice JavaScript.
 
-Sono esercizi dove ho imitato alcuni metodi JavaScript come:Concat, Push, Repeat, IndexOf.......
+It has complete exercises with tests, in which I have imitated some JavaScript methods, such as concat, push, repeat, indexOf.......…
+I wrote the functions from scratch, without using the built-in JavaScript methods, for me to better understand how they work.
 
-Ho scritto io i metodi da zero, senza usare i metodi pronti, così da capire meglio come funzionano.
-
-Ci sono anche esercizi che ho cercato di risolvere seguendo il programma di un Boot Camp.
+There are also exercises that I have solved while following the program of a Boot Camp.
+Front-End Developer · JavaScript
